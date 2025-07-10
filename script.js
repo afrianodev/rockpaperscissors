@@ -24,9 +24,9 @@ function getHumanChoice() {
   );
   let choice;
 
-  if (question === "1") {
+  if (question === "1" || question.toLowerCase() === "rock") {
     choice = "Rock";
-  } else if (question === "2") {
+  } else if (question === "2" || question.toLowerCase() === "paper") {
     choice = "Paper";
   } else {
     choice = "Scissors";
